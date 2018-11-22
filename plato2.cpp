@@ -8,9 +8,9 @@ int main()
 {
 	int cantitad,  plato , opci=100;
 	
-    printf("\n Enter an integer: ");
+    printf("Enter an integer: \n");
     
-    scanf("%d", &cantitad);
+    scanf("%d",&cantitad);
     
 	if(cantitad > 50)
 	
