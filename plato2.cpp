@@ -17,7 +17,7 @@ int main()
 	cantitad=plato*75;
 	{	
 	
-	 	printf("les plato de la opcio 100 es: %d.\n", cantitad);
+	 	printf("los plato de la opcio 100 es: %d.\n", cantitad);
 	 	
 	}
 	
