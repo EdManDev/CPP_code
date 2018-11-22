@@ -8,8 +8,9 @@ int main()
 {
 	int cantitad,  plato=1 , opci=100;
 	
-    printf("introducir el precio: \n");
-    
+	printf("Bienvenido a este programa: \n");
+    printf("introducir el precio de plato: ");
+     
     scanf(" %d ",& cantitad);
     
 	if(50 < cantitad)
@@ -18,7 +19,7 @@ int main()
 		printf("los plato de la opcio 100 es: %d.\n", cantitad);
 	}
 	else
-		printf("No el precio no es suficiente");
+		printf("el precio no es suficiente para la opcion de 100");
 
 	return 0;
 	
