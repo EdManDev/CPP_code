@@ -10,6 +10,7 @@ int main()
     
     printf("Bienvenido a este programa: \n\n");
     printf("Opciones de tipos de plato: \n\n\n");
+    
     printf("opcion 1 = plato del dia: \n");
     printf("opcion 2 = plato Medio: \n");
     printf("opcion 3 = plato fuerte: \n\n\n");
