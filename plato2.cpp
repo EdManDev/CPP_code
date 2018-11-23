@@ -7,7 +7,7 @@ using namespace std;
 
 int main()
 {
-    int cantitad_platos,  opt, res ;
+    int cantitad_platos, opt, res ;
     
     printf("Bienvenido a este programa: \n\n");
     printf("Opciones de tipos de plato: \n\n\n");
@@ -15,17 +15,17 @@ int main()
     printf("opcion 2 = plato Medio: \n");
     printf("opcion 3 = plato fuerte: \n\n\n");
     
-    printf("introducir la opcion del tipo de plato que prefieres: \n");
+    printf("Introducir la opcion del tipo de plato que prefieres: \n");
     
     scanf("%d",& opt);
     
     if(opt== 1)
     {
-        printf(" la cantidad de platos menor o igual a 50 el precio es  100\n");
-        printf(" la cantidad de platos mayor a 50 y menor a 101 el precio es  75\n");
-        printf(" la cantidad de platos mayor a 100 el precio es  50\n");
+        printf("\n    la cantidad de platos menor o igual a 50 el precio es  100\n");
+        printf("    la cantidad de platos mayor a 50 y menor a 101 el precio es  75\n");
+        printf("    la cantidad de platos mayor a 100 el precio es  50\n");
         
-        printf("Introduzca la Cantidad de platos a comprar\n\n\n");
+        printf("\nIntroduzca la Cantidad de platos a comprar\n\n\n");
         
         scanf("%d",& cantitad_platos);
         if(cantitad_platos<=50)
@@ -36,7 +36,5 @@ int main()
             
         }
     }
-    //else
-    //printf("el precio no es suficiente para la opcion de 100");
     return 0;
 }
