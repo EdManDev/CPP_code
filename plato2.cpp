@@ -7,7 +7,7 @@ using namespace std;
 
 int main()
 {
-    int cantitad_platos,  plato=1 , opci=100, opt, res ;
+    int cantitad_platos,  opt, res ;
     
     printf("Bienvenido a este programa: \n\n");
     printf("Opciones de tipos de plato: \n\n\n");
