@@ -4,7 +4,6 @@
 
 using namespace std;
 
-
 int main()
 {
     int cantitad_platos, opt, res ;
@@ -33,7 +32,6 @@ int main()
             res=cantitad_platos*100;
             printf("El precio por plato es: 100 pesos\n\n");
             printf("El precio total a pagar es:%d",res);
-            
         }
     }
     return 0;
