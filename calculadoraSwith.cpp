@@ -7,33 +7,31 @@ using namespace std;
 
 int main() 
 {
-    char op;
-    float num1, num2;
+    char signo;
+    int num1, num2;
     
     printf("Engrese Un Signo De Operador como: + o - o * o / : \n\n");
-    scanf("%d",op);
+    scanf("%c", &signo);
 
     printf("Engrese Los Numero Que Va Multiplicar: \n\n");
+    scanf("%lf &lf", &num1, &num2);
     
-    scanf("%d",num1);
-    scanf("%d",num2);
-    
-     switch(op)
+     switch(signo)
     {
         case '+':
-            printf("num1+num2 \n");
+            printf("%.1lf + %.1lf = %.1lf", num1, num2, num1 + num2);
             break;
             
         case '-':
-            printf("num1-num2 \n");
+            printf("%.1lf - %.1lf = %.1lf", num1, num2, num1 - num2);
             break;
             
         case '*':
-            printf("num1*num2 \n");
+            printf("%.1lf * %.1lf = %.1lf", num1, num2, num1 * num2);
             break;
             
         case '/':
-            printf("num1/num2 \n");
+            printf("%.1lf / %.1lf = %.1lf", num1, num2, num1 / num2);
             break;
             
         default:
