@@ -5,36 +5,36 @@
 int main() 
 {
 
-    char operator;
-    double firstNumber,secondNumber;
+    double num1,num2;
+    char op;
 
-    printf("Enter an operator (+, -, *,): ");
-    scanf("%c", &operator);
+    printf("Enter an op (+, -, *,): ");
+    scanf("%c", &op);
 
     printf("Enter two operands: ");
-    scanf("%lf %lf",&firstNumber, &secondNumber);
+    scanf("%lf %lf",&num1, &num2);
 
-    switch(operator)
+    switch(op)
     {
         case '+':
-            printf("%.1lf + %.1lf = %.1lf",firstNumber, secondNumber, firstNumber + secondNumber);
+            printf("%.1lf + %.1lf = %.1lf",num1, num2, num1 + num2);
             break;
 
         case '-':
-            printf("%.1lf - %.1lf = %.1lf",firstNumber, secondNumber, firstNumber - secondNumber);
+            printf("%.1lf - %.1lf = %.1lf",num1, num2, num1 - num2);
             break;
 
         case '*':
-            printf("%.1lf * %.1lf = %.1lf",firstNumber, secondNumber, firstNumber * secondNumber);
+            printf("%.1lf * %.1lf = %.1lf",num1, num2, num1 * num2);
             break;
 
         case '/':
-            printf("%.1lf / %.1lf = %.1lf",firstNumber, secondNumber, firstNumber / secondNumber);
+            printf("%.1lf / %.1lf = %.1lf",num1, num2, num1 / num2);
             break;
 
-        // operator doesn't match any case constant (+, -, *, /)
+        // op doesn't match any case constant (+, -, *, /)
         default:
-            printf("Error! operator is not correct");
+            printf("Error! op is not correct");
     }
     return 0;
 }
