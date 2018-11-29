@@ -9,6 +9,7 @@ int main()
     float num1, num2;
     
     printf("Engrese Un Signo De Operador como: + o - o * o / : \n\n");
+    scanf("%d,"op);
     
     printf("Engrese Los Numero Que Va Multiplicar: \n\n");
 
