@@ -32,9 +32,8 @@ int main()
             printf("%.1lf / %.1lf = %.1lf",num1, num2, num1 / num2);
             break;
 
-        // op doesn't match any case constant (+, -, *, /)
         default:
-            printf("Error! op is not correct");
+            printf("Error Hay Un Error!!!");
     }
     return 0;
 }
