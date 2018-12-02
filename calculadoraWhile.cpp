@@ -9,17 +9,19 @@ int main()
     double num1, num2, counter = 0;
     do
     {
-        printf("Engrese Un Signo De Operador como: + o - o * o / : +, -, *,: ");
-        scanf("%c", &signo);
+
+        cout << "Engrese Un Signo De Operador como: + o - o * o / : +, -, *,: ";
+        cin >> signo;
         if (signo != 'Q')
         {
-            printf( "Engrese Dos Numero: "
-            scanf("%lf &lf", &num1, &num2);
-
+            cout << "Engrese Dos Numero: ";
+            cin >> num1;
+            cin >> num2;
             cin.ignore();
             if (num2 <= 0)
             {
-                printf("ERROR! DIVIDE BY ZERO!! ");
+                cout << "ERROR! DIVIDE BY ZERO!! ";
+                cout << endl;
             }
             else
             {
@@ -50,7 +52,7 @@ int main()
                 }
             }
         }
-        printf("the result is %d", num1);
+        cout << "the result is " << num1 << endl;
 
     } while (signo != 'Q');
     return (0);
