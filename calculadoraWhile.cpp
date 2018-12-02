@@ -53,7 +53,7 @@ int main()
                 }
             }
         }
-        printf("El resultado esta: %lf", num1);
+        printf("El resultado esta: %lf",num1);
     } while (signo != 'Q');
     return (0);
 }
