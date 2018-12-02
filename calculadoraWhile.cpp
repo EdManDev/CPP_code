@@ -9,8 +9,9 @@ int main()
     double num1, num2, counter = 0;
     do
     {
-        cout << "Engrese Un Signo De Operador como: + o - o * o / : +, -, *,: ";
-        cin >> signo;
+        printf("Engrese Un Signo De Operador como: + o - o * o / : +, -, *,: ");
+        scanf("%d",signo);
+
         if (signo != 'Q')
         {
             cout << "Engrese Dos Numero: ";
