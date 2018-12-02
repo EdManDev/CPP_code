@@ -1,5 +1,8 @@
 #include <iostream>
 #include <string>
+#include<conio.h>
+#include<math.h>
+#include<stdio.h>
 
 using namespace std;
 
@@ -7,21 +10,19 @@ int main()
 {
     char signo;
     double num1, num2, counter = 0;
-    do
     {
         printf("Engrese Un Signo De Operador como: + o - o * o / : +, -, *,: ");
-        scanf("%d",signo);
+        scanf("%c", &signo);
 
         if (signo != 'Q')
         {
-            cout << "Engrese Dos Numero: ";
-            cin >> num1;
-            cin >> num2;
+            printf("Engrese Dos Numero: ");
+            scanf("%lf %lf",&num1, &num2);
+
             cin.ignore();
             if (num2 <= 0)
             {
-                cout << "ERROR! DIVIDE BY ZERO!! ";
-                cout << endl;
+                printf("ERROR! DIVIDE BY ZERO!! ");
             }
             else
             {
@@ -52,7 +53,7 @@ int main()
                 }
             }
         }
-        cout << "the result is " << num1 << endl;
+printf("El resultado esta %lf",num1);
     } while (signo != 'Q');
     return (0);
 }
