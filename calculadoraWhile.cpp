@@ -22,7 +22,7 @@ int main()
             // cin.ignore();
             if (num2 <= 0)
             {
-                printf("ERROR! DIVIDE BY ZERO!! ");
+                printf("Hay un error! para dividir por cero!! ");
             }
             else
             {
