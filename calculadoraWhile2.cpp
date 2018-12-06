@@ -16,7 +16,7 @@ int main()
             cout << "Engrese Dos Numero: ";
             cin >> num1;
             cin >> num2;
-            cin.ignore();
+            // cin >> signo;
             if (num2 <= 0)
             {
                 cout << "ERROR! DIVIDE BY ZERO!! ";

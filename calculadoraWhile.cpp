@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include<conio.h>
+// #include<conio.h>
 #include<math.h>
 #include<stdio.h>
 
@@ -19,7 +19,7 @@ int main()
             printf("Engrese Dos Numero: ");
             scanf("%lf %lf",&num1, &num2);
 
-            cin.ignore();
+            scanf("%c",signo);
             if (num2 <= 0)
             {
                 printf("ERROR! DIVIDE BY ZERO!! ");
