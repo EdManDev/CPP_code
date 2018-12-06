@@ -1,10 +1,10 @@
 #include <iostream>
 #include <string>
-// #include<conio.h>
+#include<conio.h>
 #include<math.h>
 #include<stdio.h>
 
-using namespace std;
+// using namespace std;
 
 int main()
 {
@@ -19,7 +19,7 @@ int main()
             printf("Engrese Dos Numero: ");
             scanf("%lf %lf",&num1, &num2);
 
-            scanf("%c",signo);
+            cin.ignore();
             if (num2 <= 0)
             {
                 printf("ERROR! DIVIDE BY ZERO!! ");
