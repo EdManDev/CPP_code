@@ -5,7 +5,7 @@ int main()
 
     do
     {
-        printf("Enter a number: ");
+        printf("Enter a number : ");
         scanf("%d", &number);
         sum = number;
     }
