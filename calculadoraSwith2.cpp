@@ -4,16 +4,17 @@
 
 int main() 
 {
-    double num1,num2;
-    char op;
 
-    printf("Enter an op (+, -, *,): ");
-    scanf("%c", &op);
+    double num1,num2;
+    char signo;
+
+    printf("Enter an signo (+, -, *,): ");
+    scanf("%c", &signo);
 
     printf("Enter two operands: ");
     scanf("%lf %lf",&num1, &num2);
 
-    switch(op)
+    switch(signo)
     {
         case '+':
             printf("%.1lf + %.1lf = %.1lf",num1, num2, num1 + num2);
