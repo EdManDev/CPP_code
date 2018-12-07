@@ -37,6 +37,12 @@ int main()
         default:
             printf("Error!  \n");
             break;
-    }    
+    }
+
+    while(2 >= 1):
+    {
+        
+    }
+
     return 0;
 }
