@@ -1,10 +1,6 @@
 #include <iostream>
 #include <string>
-<<<<<<< HEAD
-#include<conio.h>
-=======
 // #include<conio.h>
->>>>>>> 44e688a50f2b9d0d1c379c559118c7df599b3a46
 #include<math.h>
 #include<stdio.h>
 
@@ -23,11 +19,7 @@ int main()
             printf("Engrese Dos Numero: ");
             scanf("%lf %lf",&num1, &num2);
 
-<<<<<<< HEAD
-            cin.ignore();
-=======
             // cin.ignore();
->>>>>>> 44e688a50f2b9d0d1c379c559118c7df599b3a46
             if (num2 <= 0)
             {
                 printf("ERROR! DIVIDE BY ZERO!! ");
