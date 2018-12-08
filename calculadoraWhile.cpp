@@ -14,7 +14,7 @@ int main()
         printf("Engrese Un Signo De Operador como: + o - o * o / : +, -, *,: ");
         scanf("%c", &signo);
 
-        if (signo != 'Q')
+        if (signo) //!= 'Q'//)
         {
             printf("Engrese Dos Numero: ");
             scanf("%lf %lf",&num1, &num2);
@@ -22,7 +22,7 @@ int main()
             // cin.ignore();
             if (num2 <= 0)
             {
-                printf("Hay un error! para dividir por cero!! ");
+                printf("ERROR! DIVIDE BY ZERO!! ");
             }
             else
             {
@@ -54,9 +54,8 @@ int main()
             }
         }
         printf("El resultado esta: %lf",num1);
-    } 	while (signo != 'Q' && signo != 'q');
-    printf("",);
-
-
+    } 
+    // while (signo != 'Q' && signo != 'q');
+    
     return (0);
 }

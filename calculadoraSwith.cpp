@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include<iostream>
 #include<math.h>
+#include<conio.h>
 
 using namespace std;
 
@@ -36,6 +37,12 @@ int main()
         default:
             printf("Error!  \n");
             break;
-    }    
+    }
+
+    while(2 >= 1):
+    {
+        
+    }
+
     return 0;
 }

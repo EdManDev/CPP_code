@@ -35,5 +35,4 @@ int main()
         default:
             printf("Error Hay Un Error!!!");
     }
-    return 0;
 }
