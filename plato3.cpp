@@ -12,7 +12,7 @@ int main()
 
 do   
 {       
-        printf("BIENVENIDO  EN EL MEJOR RESTORANTE DEL MUNDO: \n\n");
+        printf("\n\n\n\n\nBIENVENIDO  EN EL MEJOR RESTORANTE DEL MUNDO: \n\n");
         printf("Opciones de tipos de plato: \n\n");
         
         printf("\n  opcion 1 = [Plato Del    Dia]: \n");
@@ -25,6 +25,8 @@ do
         
         switch(opt)
         {
+
+            
             case 1:
             {
                 printf("\nfavor introducir cantidad a comprar[Plato Del Dia]:\n\n");
