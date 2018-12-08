@@ -7,84 +7,128 @@ using namespace std;
 int main()
 {
     int opt;
-    int cantitad_platos;
+    int cantidad_platos;
     int res;
-    
-    printf("BIENVENIDO  EN EL MEJOR RESTORANTE DEL MUNDO: \n\n");
-    printf("Opciones de tipos de plato: \n\n");
-    
-    printf("\n  opcion 1 = [Plato Del    Dia]: \n");
-    printf("  opcion 2 = [Plato Del  Medio]: \n");
-    printf("  opcion 3 = [Plato Del Fuerte]: \n\n\n");
-    
-    printf("Introducir la opcion del tipo de plato que prefieres:\n\n\n");
-    
-    scanf("%d",& opt);
-    
-    switch(opt)
-    {
-        case 1:
-        {
-            printf("\nAhora Introducir un precio, lo que tu quiere  [Plato Del Dia]:\n\n");
 
-            printf("\n    -la cantidad de platos: menor o igual a 50 el precio es       = 100 DOP\n");
-            //printf("    -la cantidad de platos: mayor a 50 y menor a 101 el precio es = 75 DOP\n");
-            //printf("    -la cantidad de platos: mayor a 100 el precio es              = 50 DOP\n");
-            
-            printf("\nIntroduzca la Cantidad de platos a comprar\n\n\n");
-            
-            scanf("%d",& cantitad_platos);
-            if(cantitad_platos<=100)
-            {
-                res = cantitad_platos - 100;
-                printf("\nEl precio por plato es: 100 pesos\n");
-                printf("Lo Que Te Falta es: %d\n\n",res);
-            }
-            else{
-                printf("Ok Gracias por su compra  \n");
-            }
-            break;
-        }   
-        case 2:
+do   
+{       
+        printf("\n\n\n\n\nBIENVENIDO  EN EL MEJOR RESTORANTE DEL MUNDO: \n\n");
+        printf("Opciones de tipos de plato: \n\n");
+        
+        printf("\n  opcion 1 = [Plato Del    Dia]: \n");
+        printf("  opcion 2 = [Plato Del  Medio]: \n");
+        printf("  opcion 3 = [Plato Del Fuerte]: \n\n\n");
+        
+        printf("Introducir la opcion del tipo de plato que prefieres:\n\n\n");
+        
+        scanf("%d",& opt);
+        
+        switch(opt)
         {
-            printf("\nAhora Introducir un precio, lo que tu quiere  [Plato Del  Medio]:\n\n");
 
-            printf("    -la cantidad de platos: mayor a 50 y menor a 101 el precio es = 75 DOP\n");
             
-            printf("\nIntroduzca la Cantidad de platos a comprar\n\n\n");
-            
-            scanf("%d",& cantitad_platos);
-            if(cantitad_platos<=200)
+            case 1:
             {
-                res = cantitad_platos - 200;
-                printf("\nEl precio por plato es: 100 pesos\n");
-                printf("Lo Que Te Falta es: %d\n\n",res);
-            }
-            else{
-                printf("Ok Gracias por su compra  \n");
-            }
-            break;
-        }  
-        case 3:
-        {
-            printf("\nAhora Introducir un precio, lo que tu quiere  [Plato Del Fuerte]:\n\n");
-            
-            printf("\nIntroduzca la Cantidad de platos a comprar\n\n\n");
-            
-            scanf("%d",& cantitad_platos);
-            if(cantitad_platos<=500)
+                printf("\nfavor introducir cantidad a comprar[Plato Del Dia]:\n\n");
+
+                scanf("%d",& cantidad_platos);
+
+                if(cantidad_platos < 50)
+                {
+                    res = cantidad_platos * 100;
+                    printf("el total el pesos es de %d",res);
+                    printf ("\n El plato costo 100 pesos");
+                    
+                }
+                
+                if(cantidad_platos > 50 && cantidad_platos < 100)
+                {
+                    res = cantidad_platos * 75;
+                    printf("el total el pesos es de %d",res);
+                    printf ("\n El plato costo 75 pesos");
+                }
+
+                if(cantidad_platos > 100)
+                {
+                    res = cantidad_platos * 50;
+                    printf("el total el pesos es de %d",res);
+                    printf ("\n El plato costo 50 pesos");    
+                }
+                break;
+            }   
+            case 2:
             {
-                res = cantitad_platos - 500;
-                printf("\nEl precio por plato es: 100 pesos\n");
-                printf("Lo Que Te Falta es: %d\n\n",res);
-            }
-            else{
-                printf("Ok Gracias por su compra  \n");
-            }
-            break;
-        }    
-        default:
-            printf(" Nigun opciones han sido selectionado! \n");
-    }
-    return 0;
+                printf("\n que cantidad desea comprar  [Plato Del  Medio]:\n\n");
+
+                scanf("%d",& cantidad_platos);
+
+                if(cantidad_platos < 50)
+                {
+                    res = cantidad_platos * 300;
+                    printf("el total el pesos es de %d",res);
+                    printf ("\n El plato costo 300 pesos");   
+                }
+                
+                if(cantidad_platos > 50 && cantidad_platos <100 )
+                {
+                    res = cantidad_platos * 250;
+                    printf("el total el pesos es de %d",res);
+                    printf ("\n El plato costo 250 pesos");
+                }
+                
+                
+                
+                if(cantidad_platos > 100)
+                {
+                    res = cantidad_platos * 200;
+                    printf("el total el pesos es de %d",res);
+                    printf ("\n El plato costo 200 pesos");
+                }
+                break;
+            }  
+            case 3:
+            {
+                printf("\n que cantidad desea comprar  [Plato Del Fuerte]:\n\n");
+
+                scanf("%d",& cantidad_platos);
+
+                if(cantidad_platos < 50)
+                {
+                    res = cantidad_platos * 500;
+                    printf("el total el pesos es de %d",res);
+                    printf ("\n El plato costo 500 pesos");
+                    
+                
+                }
+                
+                if(cantidad_platos > 50 && cantidad_platos <100 )
+                {
+                    res = cantidad_platos * 400;
+                    printf("el total el pesos es de %d",res);
+                    printf ("\n El plato costo 400 pesos");
+                    
+                    
+                
+                }
+                
+                if(cantidad_platos > 100)
+                {
+                    res = cantidad_platos * 300;
+                    printf("el total el pesos es de %d",res);
+                    printf ("\n El plato costo 300 pesos");
+                }
+                break;
+            }    
+            default:
+                printf(" Nigun opciones han sido selectionado! \n");
+        }
+}
+
+while(opt !=0 );
+
+printf("Sum = %d",res);
+
+return 0;    
+
+	
 }
