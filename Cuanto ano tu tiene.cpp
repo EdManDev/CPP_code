@@ -4,12 +4,29 @@ using namespace std;
 
 int main()
 {
-	cout 《"?cuanto ano tu tiene "《endl;
-	
-	int anodeusuario(0);
-	
-	cin 》anodeusuario;
-	
-	cout 《 tu tiene《anodeusuario《 ano!《endl;
+	cout << "¿ como te llamas? " << endl;
+	cout << "¿ cuanto ano tu tienes? " << endl;
+
+	int nombre;
+	cin >> nombre;
+
+
+	int anodeusuario;
+	cin >> anodeusuario;
+
+	cout << "tu Nombre es: "<< nombre << "tu tiene: " << anodeusuario << " anos!" << endl;
 	return 0;
-	}
+}
+
+// int main()
+// {
+// 	int nombre;
+// 	string anodeusuario;
+
+//   cout << "¿ como te llamas y su anio?  " ;
+
+//   cin >> nombre, anodeusuario;
+
+//   cout << "tu Nombre es: "<< nombre << "tu tiene: " << anodeusuario << " anos!" << endl;
+//   // return 0;
+// }
