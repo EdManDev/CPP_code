@@ -1,7 +1,7 @@
 int LED1 = 13; // GPIO 13, 
 int LED2 = 12; // GPIO 12, 
 int LED3 = 14; // GPIO 11 before, 
-
+ 
 void setup() {
   // put your setup code here, to run once: 
   pinMode(LED1, OUTPUT);
